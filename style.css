@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(./img/slider/slider-01.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-span {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heading {
+  color: #ff305b;
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: white;
+  background-color: #333;
+}
+
+.logo-container {
+  float: left;
+  font-weight: 800;
+  padding: 18px 0;
+}
+
+.logo {
+  color: #ff305b;
+  font-size: 24px;
+}
+
+.nav {
+  float: right;
+  padding: 20px 0;
+}
+
+.nav-item {
+  float: left;
+  padding: 0 10px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.nav-item:first-child {
+  color: #ff305b;
+}
+
+.nav-item:hover {
+  color: #ff305b;
+}
+
+.section1 {
+  padding: 100px 0 125px;
+}
+
+.about-box {
+  border-radius: 5px;
+  box-shadow: 0 0 0 8px #555555 inset;
+  position: relative;
+  width: 360px;
+  height: 440px;
+  float: left;
+}
+
+.profile-photo {
+  position: absolute;
+  transform: translate(24px, 24px);
+  width: 360px;
+  height: 440px;
+}
+
+.profile-description {
+  width: 50%;
+  padding-left: 70px;
+  float: left;
+}
+
+.profile-heading {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.highlighted-text {
+  color: #ff305b;
+}
+
+.profile-paragraph {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #999999;
+}
