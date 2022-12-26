@@ -7,51 +7,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 4</title>
     <script
       src="https://kit.fontawesome.com/32c384e39d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Assignment 4</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo-container"><a href="#" class="logo">Fokir</a></div>
-        <ul class="nav">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">About</li>
-          <li class="nav-item">Services</li>
-          <li class="nav-item">Portfolio</li>
-          <li class="nav-item">Testimonial</li>
-          <li class="nav-item">Blog</li>
-          <li class="nav-item">Contact</li>
-        </ul>
-        <div class="clear"></div>
+        <div class="row">
+          <div class="logo-container float-left">
+            <a href="#" class="logo">Fokir</a>
+          </div>
+          <nav class="nav-container float-right">
+            <ul class="float-right">
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Home</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">About</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Services</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Portfolio</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Testimonial</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Blog</a>
+              </li>
+              <li class="nav-item float-left">
+                <a href="#" class="nav-text">Contact</a>
+              </li>
+              <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+          </nav>
+          <div class="clear"></div>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <span class="hero-span">Hello i'm</span>
-          <h1 class="heading">Alex Smith</h1>
-          <span class="subheading">Professional Web Designer</span>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container">
-          <div class="about-box">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="heading hero-heading-1">Hello i'm</div>
+        <h1>Alex Smith</h1>
+        <div class="heading hero-heading-2">Professional Web Developer</div>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="about-box float-left">
             <div class="profile-photo">
-              <img src="./img/about/profile.jpg" alt="A Proud Man" />
+              <img src="./img/about/profile.jpg" alt="Profile" />
             </div>
           </div>
-          <div class="profile-description">
-            <h2 class="profile-heading">
-              <span class="highlighted-text">I</span> Hello,
-            </h2>
+          <div class="profile-description float-left">
+            <h2 class="heading profile-heading"><span>I</span> hello,</h2>
             <p class="profile-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -61,44 +82,29 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <ul class="float w-40">
-              <li class="mb-25">
-                <b>Name:</b><span class="lighter-text"> Rdam Smith</span>
+            <ul class="profile-about">
+              <li class="about-item"><span>Name:</span> Rdam smith</li>
+              <li class="about-item"><span>Job Title:</span> UI/UX Designer</li>
+              <li class="about-item"><span>Age:</span> 26 Year</li>
+              <li class="about-item">
+                <span>Location:</span> United States, US
               </li>
-              <li class="mb-25">
-                <b>Age:</b><span class="lighter-text"> 26 Year</span>
+              <li class="about-item"><span>Freelance:</span> Available</li>
+              <li class="about-item">
+                <span>E-mail: </span><a href="#"> Nadia420@gmail.com</a>
               </li>
-              <li class="mb-25">
-                <b>Freelance:</b><span class="lighter-text"> Available</span>
-              </li>
+              <div class="clear"></div>
             </ul>
-            <ul class="float w-60">
-              <li class="mb-25">
-                <b>Job Title:</b>
-                <span class="lighter-text"> UI/UX Designer</span>
-              </li>
-              <li class="mb-25">
-                <b>Location:</b
-                ><span class="lighter-text"> United States, US</span>
-              </li>
-              <li class="mb-25">
-                <b>E-mail:</b>
-                <span class="light-text">Nadia420@gmail.com</span>
-              </li>
-            </ul>
-            <button class="button mr-10">
-              Download CV <i class="fa-solid fa-download button-icon"></i>
-            </button>
-            <button class="button">
+            <a href="" class="about-button">
+              Dowanload CV <i class="fa-solid fa-download button-icon"></i>
+            </a>
+            <a href="" class="about-button">
               Hire Me <i class="fa-solid fa-paper-plane button-icon"></i>
-            </button>
+            </a>
           </div>
           <div class="clear"></div>
         </div>
-      </section>
-      <section class="our-services">
-        <h2 class="section-title">Our Services</h2>
-      </section>
-    </main>
+      </div>
+    </section>
   </body>
 </html>
