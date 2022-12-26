@@ -44,9 +44,9 @@ p {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
   margin: 0 auto;
+  width: 450px;
 }
 
 .heading {
@@ -84,6 +84,18 @@ p {
 .nav-container {
   padding: 0 15px;
   width: 75%;
+}
+
+.nav-icon {
+  cursor: pointer;
+  color: white;
+  padding: 9px;
+  font-size: 24px;
+  margin: 12px;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .nav-item {
@@ -224,6 +236,85 @@ p {
   margin-left: 5px;
 }
 
+.service-section {
+  padding: 100px 0 54px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+.section-title::before {
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+
+.section-title::after {
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
+}
+
+.service-container {
+  text-align: center;
+  width: 100%;
+}
+
+.service {
+  padding: 40px 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.service-icon {
+  color: #ff305b;
+  display: block;
+  font-size: 36px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.service:hover {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.service:hover .service-icon {
+  scale: 1.2;
+}
+
+.service-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.service-paragraph {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -237,6 +328,9 @@ p {
   .profile-description {
     width: 50%;
     padding-left: 70px;
+  }
+  .service-container {
+    width: 50%;
   }
 }
 
@@ -255,6 +349,15 @@ p {
   /* .profile-description {
     width: 58.34%;
   } */
+  .service-container {
+    width: 25%;
+  }
+  .nav-icon {
+    display: none !important;
+  }
+  .desktop-nav {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
